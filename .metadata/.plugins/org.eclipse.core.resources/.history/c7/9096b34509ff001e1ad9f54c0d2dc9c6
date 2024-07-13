@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import="java.awt.Graphics2D" %>
+<%@ page import="java.awt.image.renderable.ParameterBlock" %>
+<%@ page import="javax.media.jai.JAI" %>
+<%@ page import="javax.media.jai.RenderedOp" %>
+<%@ page import="javax.imageio.ImageIO" %>
+<%@ page import="com.oreilly.servlet.MultipartRequest" %>
+<%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
+<%@ page import="java.util.*" %>
+<%@ page import="java.io.*" %>
+<%
+	String imagePath = request.getRealPath("image");
+	int size=1*1024*1024; //1MB가 최대 파일 크기
+	String filename="";
+	
+	try {
+		// 최대 크기를 넘어가는 파일 크면 예외 처리
+		MultipartRequest multi = new MultipartRequest(request, 
+													uploadPath,
+													size,
+													"euc-kr",
+													new DefaultFileRenamePolicy());
+		
+		name=multi.getParameter("name");
+		subject=multi.getParameter("subject");
+		
+		Enumeration files = multi.getFileNames();
+		
+		String file=(String)files.nextElement();
+		filename=multi.getFilesystemName(file);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

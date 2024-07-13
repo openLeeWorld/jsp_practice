@@ -1,0 +1,15 @@
+INDEX VERSION 1.134
+C:\Users\leeki\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3176433611.index
+\TestSQL\src\main\java
+C:\Users\leeki\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4079675011.index
+\JSTLtest\src\main\java
+C:\Users\leeki\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2725518138.index
+\JavaMail\src\main\java
+C:\Users\leeki\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2805157746.index
+\JspStudy\src\main\java
+C:\Users\leeki\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3966875774.index
+\JspStudy\src\main\java
+C:\Users\leeki\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1712006693.index
+\JSPStudy\src\main\java
+C:\Users\leeki\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2583991261.index
+\COSstudy\src\main\java

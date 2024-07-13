@@ -1,0 +1,25 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try {
+			
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/login_db?serverTimezone=UTC", 
+					"root","rhkgkr!@");
+			System.out.println("success");
+			Statement state = conn.createStatement();
+			//String sql = "INSERT INTO member(id, name, password, age, gender, email) VALUES(1, '김태하', '1234', 33, \"male\", \"wer@gmail.com\");"
+			String sql = "SELECT * FROM member";
+			ResultSet rs = state.executeQuery(sql);
+			
+		} catch (SQLException ex) {
+			System.out.println("SQLException" + ex);
+		}
+	}
+}

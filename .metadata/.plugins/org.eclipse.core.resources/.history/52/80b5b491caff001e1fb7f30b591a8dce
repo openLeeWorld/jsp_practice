@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="javax.sql.*" %>
+<%@ page import="javax.naming.*" %>
+<%@ page import="java.util.*" %>
+<% 
+	Connection conn = null;
+	String sql = "INSERT INTO student (num, name) VALUES(?, ?)";
+	ArrayList<String> names = new ArrayList<>(Arrays.asList("송가영", "이서영", "김지름", "경사우"));
+	
+	try {
+		Context init = new InitialContext();
+		DataSource ds = (DataSource) init.lookup("java:comp/env/jdbc/MySql");
+		conn = ds.getConnection();
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		
+		for (int i=1; i<=4; i++) {
+			pstmt.setInt(1, i);
+			pstmt.setString(2,  
+		}
+		int result = pstmt.executeUpdate(sql);
+		if (result != 0) {
+			out.println("<h3>레코드가 등록되었습니다.</h3>");
+		}
+		stmt.close();
+	} catch (Exception e) {
+		out.println("<h3>레코드가 등록 안되었습니다.</h3>");
+		e.printStackTrace();
+	} finally {
+		conn.close();
+	}
+%> 

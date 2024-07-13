@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+ <%
+ 	String pagefile=request.getParameter("page");
+ 	if (pagefile==null) pagefile="newitem";
+ %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Template test</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<jsp:include page="top.jsp"/>
+			</td>
+		</tr>
+		<tr>
+			<td width="100%" colspan="3" height="40" >
+				<jsp:include page="bottom.jsp"/>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

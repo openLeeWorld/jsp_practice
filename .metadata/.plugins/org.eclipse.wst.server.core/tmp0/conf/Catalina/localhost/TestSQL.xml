@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="C:\Users\leeki\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\TestSQL" path="/TestSQL" reloadable="true" source="org.eclipse.jst.jee.server:TestSQL">
+	<Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxActive="20" maxIdle="10" maxWait="-1" name="jdbc/MySql" password="rhkgkr!@" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/login_db?serverTimezone=UTC" username="root"/>
+</Context>

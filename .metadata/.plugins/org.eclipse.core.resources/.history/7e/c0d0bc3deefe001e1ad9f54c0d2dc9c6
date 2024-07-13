@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Template test</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				
+			</td>
+		</tr>
+		<tr>
+			<td><br>
+				
+			</td>
+			<!--  
+			<td colspan="2" align="center"><br>
+				<jsp:include page=<%=pagefile %> +" .jsp"/>
+			</td>
+			-->
+		</tr>
+		<tr>
+			<td width="100%" colspan="3" height="40" >
+				
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
